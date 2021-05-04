@@ -31,4 +31,4 @@ app.use('/', indexRouter)
 
 
 //Listening in port
-app.listen(process.env.PORT || 6009, ()=>{console.log('started')})
+app.listen(process.env.PORT || 6009, ()=>console.log('started'))
