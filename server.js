@@ -12,10 +12,10 @@ const indexRouter = require('./routes/index')
 
 
 
-// I dunno what this block underneath does 
+//EJS setup 
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
-app.set('layout', 'layouts/layout')
+app.set('layout', 'layouts/normal')
 app.use(expressLayouts)
 app.use(express.static('public'))
 // // // //
@@ -31,4 +31,4 @@ app.use('/', indexRouter)
 
 
 //Listening in port
-app.listen(process.env.PORT || 6009, ()=>console.log('started'))
+app.listen(process.env.PORT || 6009, ()=>console.log(`started on port ${process.env.PORT}`))
